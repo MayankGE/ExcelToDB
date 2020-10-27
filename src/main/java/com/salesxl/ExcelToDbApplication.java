@@ -18,7 +18,7 @@ public class ExcelToDbApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		String path =args[0];
+		String path ="C:/Users/1450850/Desktop/myExcel.xlsx";
 		System.out.println("application start");
 		service.ReadDataFromExcel(path);
 		System.out.println("application end");
