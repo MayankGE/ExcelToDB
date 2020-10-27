@@ -34,4 +34,3 @@ public class CurrencyExchangeGenerator implements IdentifierGenerator{
 	}
 	
 }
-
