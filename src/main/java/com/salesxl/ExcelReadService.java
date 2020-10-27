@@ -30,7 +30,7 @@ public class ExcelReadService {
         for(Sheet sheet: workbook) {
             System.out.println("=> " + sheet.getSheetName());
             
-            DataFormatter dataFormatter = new DataFormatter();
+
             for (Row row: sheet) {
             	
     			
@@ -60,13 +60,7 @@ public class ExcelReadService {
             	cr.setSGD(sgd);
             	
             	repo.save(cr);
-            	
-                System.out.println(row.getCell(0).getDateCellValue());
-                System.out.println(row.getCell(1));
-                System.out.println(row.getCell(2));
-                System.out.println(row.getCell(3));
-                System.out.println(row.getCell(4));
-                System.out.println(row.getCell(5));
+
               
             }
             
